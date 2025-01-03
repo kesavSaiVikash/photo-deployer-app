@@ -1,0 +1,33 @@
+{
+  "name": "photo-deployer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cdk deploy --all --outputs-file outputs.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "^22.10.2",
+    "aws-cdk": "^2.173.1",
+    "aws-cdk-lib": "^2.173.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.24.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@aws-amplify/auth": "^6.8.3",
+    "@aws-sdk/client-cognito-identity": "^3.714.0",
+    "@aws-sdk/client-dynamodb": "^3.713.0",
+    "@aws-sdk/client-s3": "^3.715.0",
+    "@aws-sdk/credential-providers": "^3.715.0",
+    "@aws-sdk/s3-request-presigner": "^3.717.0",
+    "@aws-sdk/util-dynamodb": "^3.713.0",
+    "aws-amplify": "^6.10.3",
+    "dotenv": "^16.4.7"
+  }
+}
